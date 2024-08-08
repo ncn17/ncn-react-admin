@@ -1,4 +1,4 @@
-import { Button, useTheme } from '@mui/material';
+import { Box, Button, useTheme } from '@mui/material';
 import { Download } from '@mui/icons-material';
 import { Header } from '../../components/header';
 import { tokens } from '../../theme';
@@ -8,7 +8,7 @@ export default function DashBoard() {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <div>
+    <Box m={2}>
       <Header
         title="Dashbord"
         subTitle="Welcome to your dashboard"
@@ -27,6 +27,6 @@ export default function DashBoard() {
         }
       />
       dashboard
-    </div>
+    </Box>
   );
 }

@@ -12,12 +12,7 @@ export const Header = ({ title, subTitle, option }: HeaderType) => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box
-      display="flex"
-      justifyContent="space-between"
-      alignItems="center"
-      m={2}
-    >
+    <Box display="flex" justifyContent="space-between" alignItems="center">
       <Box>
         <Typography
           variant="h3"

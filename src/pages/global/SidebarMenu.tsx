@@ -153,7 +153,7 @@ export default function SidebarMenu() {
         <SectionTitle title="Data" />
         <Item
           title="Manage Team"
-          to="/teams"
+          to="/team"
           selected={selected}
           icon={<PeopleOutlined />}
           setSelected={setSelected}

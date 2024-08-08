@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import Topbar from './pages/global/Topbar';
 import Dashboard from './pages/dashboard';
 import SidebarMenu from './pages/global/SidebarMenu';
+import { Team } from './pages/team';
 
 /**
  * Build a custom App Wrapped
@@ -20,6 +21,7 @@ export function App() {
         <Topbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/team" element={<Team />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
