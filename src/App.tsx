@@ -2,8 +2,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
 import { useMode, ColorModeContext } from './theme';
-import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Topbar from './pages/global/Topbar';
+import Dashboard from './pages/dashboard';
 
 /**
  * Build a custom App Wrapped
@@ -14,8 +15,9 @@ export function App() {
   return (
     <div className="app">
       <main className="content">
+        <Topbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
@@ -25,7 +27,7 @@ export function App() {
 
 /**
  * Build a custom App Wrapped
- * Init and config react router
+ * Init and config react router | theme ...
  * @returns WrappedApp
  */
 export function WrappedApp() {

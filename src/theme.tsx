@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useState, useMemo } from 'react';
 import { createTheme } from '@mui/material/styles';
 import { PaletteMode } from '@mui/material';
@@ -8,7 +9,7 @@ const LIGHT = 'light';
 const FONTS = ['Source Sans Pro', 'sans-serif'].join(',');
 
 // color design tokens export
-const tokens = (mode: string) => ({
+export const tokens = (mode: string) => ({
   ...(mode === DARK
     ? {
         grey: {
@@ -204,7 +205,6 @@ export const ColorModeContext = createContext({
   toggleColorMode: () => {},
 });
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useMode = () => {
   const [mode, setMode] = useState<'light' | 'dark'>(DARK);
 
