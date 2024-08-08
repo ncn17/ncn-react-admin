@@ -119,11 +119,11 @@ export default function SidebarMenu() {
           )}
         </MenuItem>
         {!isCollapse && (
-          <Box mb="25px">
+          <Box mb="5px">
             <Box display="flex" justifyContent="center" alignItems="center">
               <img
-                width="100px"
-                height="100px"
+                width="80px"
+                height="80px"
                 src={UserProfile}
                 style={{ borderRadius: '50%', cursor: 'pointer' }}
                 alt="user profile"
@@ -135,7 +135,7 @@ export default function SidebarMenu() {
                 color={colors.grey[100]}
                 style={{ fontWeight: 'bold' }}
               >
-                Ed Roh
+                Clerc N
               </Typography>
               <Typography variant="h6" color={colors.greenAccent[500]}>
                 VP Fancy Admin
