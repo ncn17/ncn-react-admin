@@ -23,6 +23,17 @@ export const Team = () => {
     }
   };
 
+  const getAccessIcon = (access: string) => {
+    switch (access) {
+      case 'admin':
+        return <AdminPanelSettingsOutlined />;
+      case 'manager':
+        return <SecurityOutlined />;
+      default:
+        return <LockOpenOutlined />;
+    }
+  };
+
   const columns: GridColDef<(typeof mockDataTeam)[number]>[] = [
     { field: 'id', headerName: 'ID' },
     {
@@ -68,7 +79,7 @@ export const Team = () => {
             bgcolor={getAccessBgColor(access)}
             borderRadius="4px"
           >
-            <AdminPanelSettingsOutlined />
+            {getAccessIcon(access)}
             <Typography
               textTransform="capitalize"
               color={colors.grey[100]}
