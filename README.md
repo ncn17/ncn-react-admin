@@ -1,11 +1,11 @@
-# NCN React Template
+# NCN React Admin DashBorad
 
 This is a complete custom template for build fast and professional
 react app.
 
-Version : `0.0.76`
+Version : `0.0.1`
 
-This template use best techno like
+This template use best techno like :
 
 - React js
 - Vite

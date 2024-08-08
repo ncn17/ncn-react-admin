@@ -19,6 +19,8 @@ module.exports = {
     ],
     '@typescript-eslint/comma-dangle': 0,
     'react/react-in-jsx-scope': 0,
+    'import/prefer-default-export': 0,
+    'import/no-extraneous-dependencies': 0,
   },
   parserOptions: {
     ecmaVersion: 'latest',

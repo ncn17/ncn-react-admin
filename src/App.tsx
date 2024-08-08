@@ -1,4 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from '@emotion/react';
+import { CssBaseline } from '@mui/material';
+import { useMode, ColorModeContext } from './theme';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 
@@ -9,10 +12,14 @@ import NotFound from './pages/NotFound';
  */
 export function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <div className="app">
+      <main className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
@@ -22,9 +29,15 @@ export function App() {
  * @returns WrappedApp
  */
 export function WrappedApp() {
+  const [theme, colorMode] = useMode();
   return (
     <BrowserRouter>
-      <App />
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <App />
+        </ThemeProvider>
+      </ColorModeContext.Provider>
     </BrowserRouter>
   );
 }
