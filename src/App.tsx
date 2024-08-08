@@ -5,6 +5,7 @@ import { useMode, ColorModeContext } from './theme';
 import NotFound from './pages/NotFound';
 import Topbar from './pages/global/Topbar';
 import Dashboard from './pages/dashboard';
+import SidebarMenu from './pages/global/SidebarMenu';
 
 /**
  * Build a custom App Wrapped
@@ -14,6 +15,7 @@ import Dashboard from './pages/dashboard';
 export function App() {
   return (
     <div className="app">
+      <SidebarMenu />
       <main className="content">
         <Topbar />
         <Routes>
