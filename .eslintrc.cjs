@@ -23,6 +23,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'arrow-body-style': 0,
     'react/function-component-definition': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    'react/jsx-props-no-spreading': 0,
   },
   parserOptions: {
     ecmaVersion: 'latest',
