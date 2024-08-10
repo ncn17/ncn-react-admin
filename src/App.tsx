@@ -11,6 +11,7 @@ import { Contacts } from './pages/contacts';
 import { Invoices } from './pages/invoices';
 import { Profiles } from './pages/profiles';
 import { Calendar } from './pages/calendar';
+import { Faq } from './pages/faq';
 
 /**
  * Build a custom App Wrapped
@@ -30,6 +31,7 @@ export function App() {
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/profil-form" element={<Profiles />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -317,6 +317,29 @@ export const mockTransactions = [
   },
 ];
 
+export const mockFaqs = [
+  {
+    title: 'An Important Question',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+  },
+  {
+    title: 'Another Important Question',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+  },
+  {
+    title: 'Your Favorite Question',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+  },
+  {
+    title: 'Some Random Question',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+  },
+  {
+    title: 'The Final Question',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+  },
+];
+
 export const mockBarData = [
   {
     country: 'AD',
