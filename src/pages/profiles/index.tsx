@@ -88,7 +88,7 @@ export const Profiles = () => {
               sx={{ gridColumn: 'span 4' }}
             />
           </Box>
-          <Box display="flex" mt={2}>
+          <Box display="flex" mt={4}>
             <Button type="submit" color="secondary" variant="contained">
               Create new User
             </Button>

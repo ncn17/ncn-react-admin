@@ -10,6 +10,7 @@ import { Team } from './pages/team';
 import { Contacts } from './pages/contacts';
 import { Invoices } from './pages/invoices';
 import { Profiles } from './pages/profiles';
+import { Calendar } from './pages/calendar';
 
 /**
  * Build a custom App Wrapped
@@ -28,6 +29,7 @@ export function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/profil-form" element={<Profiles />} />
+          <Route path="/calendar" element={<Calendar />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
