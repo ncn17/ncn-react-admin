@@ -106,12 +106,16 @@ export const Calendar = () => {
               interactionPlugin,
               listPlugin,
             ]}
+            headerToolbar={{
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth',
+            }}
             initialView="dayGridMonth"
             editable
             selectable
             selectMirror
             dayMaxEvents
-            weekends={false}
             select={handleDateClick}
             eventClick={handleEventClick}
             eventsSet={(events) => setCurrentEvents(events)}
@@ -120,6 +124,11 @@ export const Calendar = () => {
                 id: '12315',
                 title: 'All-day event',
                 date: '2024-08-14',
+              },
+              {
+                id: '12318',
+                title: 'Call Manager fix situation',
+                date: '2024-08-12',
               },
               {
                 id: '5123',
