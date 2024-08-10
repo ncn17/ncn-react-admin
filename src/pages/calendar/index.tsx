@@ -12,6 +12,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import { EventApi } from '@fullcalendar/core';
 import listPlugin from '@fullcalendar/list';
 import { Header } from '../../components/header';
 import { tokens } from '../../theme';
@@ -19,9 +20,10 @@ import { tokens } from '../../theme';
 export const Calendar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [currentEvents, setCurrentEvents] = useState([]);
+  const [currentEvents, setCurrentEvents] = useState<EventApi[]>([]);
 
   const handleDateClick = (selected: any) => {
+    // eslint-disable-next-line no-alert
     const title = prompt('Please enter a new title for your event');
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
