@@ -43,7 +43,9 @@ const Item = ({ title, to, selected, icon, setSelected }: ItemType) => {
       onClick={() => setSelected(title)}
       component={<Link to={to} />}
     >
-      <Typography textTransform="capitalize">{title}</Typography>
+      <Typography fontSize="13px" textTransform="capitalize">
+        {title}
+      </Typography>
     </MenuItem>
   );
 };
@@ -90,6 +92,7 @@ export default function SidebarMenu() {
               backgroundColor: 'transparent !important',
               color: '#868dfb !important',
             },
+            height: '40px !important',
           },
         }}
       >

@@ -12,6 +12,10 @@ import { Invoices } from './pages/invoices';
 import { Profiles } from './pages/profiles';
 import { Calendar } from './pages/calendar';
 import { Faq } from './pages/faq';
+import { BarCharts } from './pages/barCharts';
+import { PieCharts } from './pages/pieCharts';
+import { LineCharts } from './pages/lineCharts';
+import { GeoCharts } from './pages/geoCharts';
 
 /**
  * Build a custom App Wrapped
@@ -32,6 +36,10 @@ export function App() {
           <Route path="/profil-form" element={<Profiles />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/bar" element={<BarCharts />} />
+          <Route path="/pie" element={<PieCharts />} />
+          <Route path="/line" element={<LineCharts />} />
+          <Route path="/geography" element={<GeoCharts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

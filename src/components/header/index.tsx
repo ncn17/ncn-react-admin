@@ -16,7 +16,7 @@ export const Header = ({ title, subTitle, option }: HeaderType) => {
       <Box>
         <Typography
           variant="h3"
-          textTransform="uppercase"
+          textTransform="capitalize"
           mb="5px"
           fontWeight="bold"
           color={colors.grey[100]}
