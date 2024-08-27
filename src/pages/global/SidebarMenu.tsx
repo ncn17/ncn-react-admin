@@ -87,7 +87,7 @@ export default function SidebarMenu() {
             color: '#6870fa !important',
           },
           [`.${menuClasses.button} `]: {
-            margin: !isCollapse ? '15px aauto' : '0px',
+            margin: !isCollapse ? '15px auto' : '0px',
             '&:hover': {
               backgroundColor: 'transparent !important',
               color: '#868dfb !important',
