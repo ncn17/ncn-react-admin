@@ -33,7 +33,7 @@ export const Profiles = () => {
   const isNoMobile = useMediaQuery('(min-width:600px)');
 
   const handleFormSubmit: any = (values: object, actions: any) => {
-    console.log(values);
+    // console.log(values);
 
     actions.resetForm();
   };

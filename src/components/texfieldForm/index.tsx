@@ -1,7 +1,8 @@
-import { TextField } from '@mui/material';
+import { TextField, TextFieldProps } from '@mui/material';
 import { useField } from 'formik';
+import { FC } from 'react';
 
-type TextFieldType = {
+type CustomTextFieldProps = TextFieldProps & {
   name: string,
   label: string,
 };
@@ -11,11 +12,11 @@ type TextFieldType = {
  * validation and settings
  * @returns TextField
  */
-export const TextFieldForm = ({
+export const TextFieldForm: FC<CustomTextFieldProps> = ({
   name,
   label,
   ...props
-}: TextFieldType): JSX.Element => {
+}) => {
   const [field, meta] = useField(name);
 
   return (

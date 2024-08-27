@@ -87,12 +87,12 @@ export default function SidebarMenu() {
             color: '#6870fa !important',
           },
           [`.${menuClasses.button} `]: {
-            marginLeft: !isCollapse ? '15px' : '0px',
+            margin: !isCollapse ? '15px aauto' : '0px',
             '&:hover': {
               backgroundColor: 'transparent !important',
               color: '#868dfb !important',
             },
-            height: '40px !important',
+            height: '35px !important',
           },
         }}
       >
