@@ -32,9 +32,8 @@ const controlSchema = yup.object().shape({
 export const Profiles = () => {
   const isNoMobile = useMediaQuery('(min-width:600px)');
 
-  const handleFormSubmit: any = (values: object, actions: any) => {
+  const handleFormSubmit: any = (_values: object, actions: any) => {
     // console.log(values);
-
     actions.resetForm();
   };
 
